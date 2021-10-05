@@ -1,0 +1,76 @@
+extends base.pug  
+//-this code is written to fill that template (base.pug)
+
+block scripts
+    script(src='/static/script/hero-animation-built.js')
+    //- script(src='/static/script/secondText-Anim.js')
+
+block style     
+    style   
+        include ../static/style/style.css
+        //- include ../static/style/style-text.css
+
+block content 
+    section#introSection.heroSection
+        div.BigText Welcome To Dance Academy.
+        div.fancy Eat Sleep Dance Repeat.
+    section#gapSection 
+        h3 hi 
+    section#missionSection 
+        h3 Apply Now !
+        div.holders
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minima corporis error sequi laborum, sunt sit iste maiores adipisicing elit. Ipsam vero in deleniti, eos possimus temporibus voluptas voluptatum ducimus, eaque, facilis minima. Nemo dolorem quas quasi id iure, quod corrupti accusamus. Tempora animi accusamus alias?
+            img(src="/static/img/company.png" alt="company404not found" class="compa")
+    section#gapSection 
+        h3 hi 
+    section#TeacherSection 
+        h3 Meet Our Professionals.
+        div.card1
+            h2 Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/danceTeacher.png")
+                div.card-content
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quaerat illo minus vero!  vitae minima .
+        div.card2
+            h2 Expert Way
+            div.card-box
+                div.card-img
+                    img(src="/static/img/hip-hop teacher.png")
+                div.card-content    
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quaerat illo minus vero!  vitae minima .
+        div.card3
+            h2 Master Peice 
+            div.card-box
+                div.card-img
+                    img(src="/static/img/justAteacher.png")
+                div.card-content
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quaerat illo minus vero!  vitae minima .
+    section#gapSection 
+        h3 hi 
+    section#companyUsedUsSection 
+        h3 With the Friendship of 
+        div#sponsors
+            img(src="/static/img/nikeLOGO.png" alt="sponsor-imgs" class="sp-img")
+            img(src="/static/img/redbullLogo.png" alt="sponsor-imgs" class="sp-img")
+            img(src="/static/img/Puma logo2.png" alt="sponsor-imgs" class="sp-img")
+            img(src="/static/img/FIfa logo.png" alt="sponsor-imgs" class="sp-img")
+            img(src="/static/img/pepsiLOGO.png" alt="sponsor-imgs" class="sp-img")
+    section#gapSection 
+        h3 hi   
+    footer
+        div.globalFooter  
+            ul 
+                li  1. Price includes a $30 AT&T, T-Mobile, Sprint, or Verizon discount. Requires activation with carrier. Monthly pricing: Available to qualified customers and requires 0% APR, 24-month installment loan with Citizens One or Apple Card Monthly Installments and iPhone activation with AT&T, Sprint, T-Mobile, or Verizon for purchases in an Apple Store. Taxes and shipping not included. Additional Apple Card Monthly Installments and iPhone Payments terms apply.
+                li  2. Monthly pricing: Available to qualified customers and requires 0% APR, 24-month installment loan with Citizens One or Apple Card Monthly Installments and iPhone activation with AT&T, Sprint, T-Mobile, or Verizon for purchases in an Apple Store. Taxes and shipping not included. Additional Apple Card Monthly Installments and iPhone Payments terms apply.
+                li  3. $9.99/month after free trial. No commitment. Plan automatically renews after trial until cancelled.
+                li  4. $4.99/month after free trial. One subscription per Family Sharing group. Offer good for 3 months after eligible device activation. Plan automatically renews until canceled. Restrictions and other terms apply.
+            p To access and use all the features of Apple Card, you must add Apple Card to Wallet on an iPhone or iPad with iOS 12.4 or later or iPadOS. To manage Apple Card Monthly Installments, you need an iPhone with iOS 13.2 or later or an iPad with iPadOS 13.2 or later. Update to the latest version of iOS or iPadOS by going to Settings > General > Software Update. Tap Download and Install.Available for qualifying applicants in the United States.
+            p Apple Card is issu ed by Goldman Sachs Bank USA, Salt Lake City Branch.
+            p Apple TV+ is $4.99/month after free trial. One subscription per Family Sharing group. Offer good for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms apply. 
+
+
+
+
+//- Here we are  telling our template that fill style.css in block style 
+//- and in body that is block content put our navbar 

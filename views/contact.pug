@@ -1,0 +1,22 @@
+extends base.pug  
+
+block scripts
+    script(src='/static/script/hero-animation-built.js')
+    script(src='/static/script/secondText-Anim.js')
+
+block style     
+    style   
+        include ../static/style/style.css
+        include ../static/style/styleContact.css
+        include ../static/style/style-text.css
+
+block content   
+    div.header
+        h1 Contact our workes
+    div.container
+        form(action="/contact", method=post, class="myForm")
+            input(type="text" name="name" class="myInput" placeholder="Enter your name")
+            input(type="email" name="email" class="myInput" placeholder="Enter your e-mail id")
+            input(type="phone" name="phone" class="myInput" placeholder="Enter your contact number")
+            input(type="text" name="desc" class="myInput" placeholder="Enter your complain")
+            button.btn Submit
